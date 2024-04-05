@@ -1,0 +1,9 @@
+<div
+        class="p-6 bg-gray-100 border transition border-gray-200 cursor-pointer rounded-lg shadow hover:bg-gray-200 flex flex-col items-center justify-center"
+        (click)="navigateToUserDetails(user.id)"
+        appSize
+      >
+        <img [src]="user.avatar" alt="" />
+        <h1>name:{{ user.first_name }} {{ user.last_name }}</h1>
+        <h1>email:{{ user.email }}</h1>
+      </div>
